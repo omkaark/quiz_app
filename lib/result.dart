@@ -8,12 +8,14 @@ class Result extends StatelessWidget {
 
   String get resultPhrase {
     String resultText;
-    if (resultScore <= 8) {
-      resultText = "High IQ!";
-    } else if (resultScore < 12) {
-      resultText = "Average IQ!";
+    if (resultScore == 20) {
+      resultText = "IQ Off the charts";
+    } else if (resultScore >= 17) {
+      resultText = "Super High IQ";
+    } else if (resultScore >= 12) {
+      resultText = "High IQ";
     } else {
-      resultText = "Super High IQ!";
+      resultText = "Average IQ";
     }
     return resultText;
   }
